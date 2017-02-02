@@ -5,7 +5,7 @@
   command: esxcli system module parameters list -m tcpip4
   register: output
   
-- name: Print output
+- name: Print output | 0 = disabled | 1 = enabled
   debug: var=output.stdout_lines
 
 - name: IMPORTANT!!!!!!
