@@ -48,7 +48,7 @@ miquelMariano.ESXi_{{ role }} folder must be exist. If not, the playbook not fou
 Usage
 ------
 
-`ansible-playbook playbooks/ESXi_config.yml -i inventory/ESXi --extra-vars "servers=servers_group1 role=ipv6 update_mode=true" --tags "update|status|enable|disable""`
+`ansible-playbook playbooks/ESXi_config.yml -i inventory/ESXi --extra-vars "servers=servers_group1 role=ipv6 update_mode=true" --tags "update|status|enable|disable"`
 
 
 License
