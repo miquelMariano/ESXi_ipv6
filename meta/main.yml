@@ -1,0 +1,19 @@
+---
+
+galaxy_info:
+  author: '@miquelMariano'
+  description: Ansible role to enable/disable ipv6 on our ESXi servers
+  company: 'Ncora Information Technology S.L.'
+  license: license (GPLv2, CC-BY, etc)
+  min_ansible_version: 2.2
+  galaxy_tags:
+    - ESXi
+    - vSphere
+    - ipv6
+    - miquelMariano  
+  platforms:
+  - name: GenericLinux
+    versions:
+    - all
+
+dependencies: []

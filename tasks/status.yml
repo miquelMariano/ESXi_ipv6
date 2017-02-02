@@ -1,0 +1,13 @@
+---
+
+
+- name: Status ipv6
+  command: esxcli system module parameters list -m tcpip4
+  register: output
+  
+- name: Print output
+  debug: var=output.stdout_lines
+
+- name: IMPORTANT!!!!!!
+  debug: msg="Any change of ipv6 configuration require reboot host for the changes to take efect"
+

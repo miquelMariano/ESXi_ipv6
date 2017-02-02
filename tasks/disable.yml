@@ -1,0 +1,13 @@
+---
+
+- include: status.yml
+
+- name: Disable ipv6
+  command: esxcli system module parameters set -m tcpip4 -p ipv6=0
+  register: output
+  
+- name: Print output
+  debug: var=output.stdout_lines
+
+
+- include: status.yml

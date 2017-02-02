@@ -1,0 +1,15 @@
+---
+# tasks file for ESXi_ntp
+#
+
+- include: enable.yml 
+  tags: enable
+
+- include: disable.yml 
+  tags: disable
+
+- include: status.yml
+  tags: status
+
+
+
